@@ -1,0 +1,799 @@
+
+*{
+		box-sizing: border-box;/*to xrisimopoioume gia na kanoume padding xoris na paei apo kato to box*/
+	}
+
+body {
+
+margin:0;
+padding:0;
+font-family:;
+}
+
+
+/*-------navigation -------*/
+
+
+
+nav{
+width:100%;
+background:#0a6684;
+//position:fixed;
+//z-index: 1;
+}
+
+
+
+.logo,ul {
+
+display: inline-block;
+
+}
+
+
+.logo{
+//border:3px solid yellow;
+margin:10px;
+font-size: 30px;
+
+}
+
+.logo .a{
+text-decoration: none;
+color:white;
+
+}
+
+
+.logo .a:hover{
+
+color:white;
+
+opacity:0.7;
+}
+
+nav ul{
+margin:20px;
+
+padding:0;
+float:right;
+}
+
+nav ul li{
+display:inline-block; 
+list-style: none;
+//transform: skewX(-15deg);  
+
+}
+
+
+
+nav ul li a{
+
+text-decoration: none;
+color:white;
+ font-size:17px; 
+padding: 20px 13px 17px 13px;
+
+}
+
+nav ul li a:hover{
+
+
+color:orange;
+background:#323232;
+transition: all 0.6s ease;
+}
+
+/*-------end navigation -------*/
+
+
+/*-------Header -------*/
+
+header{
+
+//background:url('./images/pic1.jpg') center/cover fixed no-repeat;/*quick way*/
+
+background-image:url('./images/pic1.jpg');
+
+// background-attachment: fixed;
+background-size:cover;
+background-repeat: no-repeat;
+
+height:500px;
+
+}
+
+
+
+ 
+.mybox{
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+padding-top:120px;
+
+}
+
+
+.mybox .ph1{
+
+background:#323232;
+margin:0 auto; 
+width:50%;
+opacity: 0.7;
+padding: 10px;
+border-radius: 10px;
+}
+
+.mybox p{
+clear:both;
+margin:0;
+ 
+font-size: 30px;
+color:white;
+font-weight: bold;
+}
+
+
+.mybox h1{
+
+margin:0;
+color:yellow;
+font-size: 40px;
+
+font-family:italic;
+}
+
+
+.mybox a{
+
+background:green;
+padding:10px 15px ;
+margin:50px 10px;
+display: inline-block;
+color:white;
+font-size: 20px;
+text-decoration: none;
+border-radius:10px;
+}
+
+
+
+.mybox .one{
+ border:1px solid white;
+
+}
+
+.mybox .two{
+ border:1px solid white;
+
+}
+
+
+.mybox .one:hover{
+ border:1px solid white;
+background: #323232;
+color:green;
+}
+
+.mybox .two:hover{
+ border:1px solid white;
+background: #323232;
+color:orange;
+}
+
+/*-------end of header -------*/
+
+
+.aboutme{
+//background: #ccc;
+//border:1px solid red;
+width:100%;
+//overflow: hidden;
+font-family: 'Titillium Web', sans-serif;
+line-height: 30px;
+}
+
+/*to parakato me to after douleuei opws to overflow hidden otan theloume na emfanistei background*/
+.aboutme:after{
+content:'';
+display: block;
+clear:both;
+
+
+}
+
+
+.aboutme h1{
+text-align: center;
+margin:0;
+padding:30px; 
+
+//padding-top:10px;
+position:relative; 
+}
+
+
+.aboutme h1:after{
+	content:'';
+background:orange;
+position:absolute;
+width:130px;
+height:2px;
+margin-left: -70px;
+bottom:30px;
+left:50%;
+
+}
+
+
+.aboutme .col-left , .aboutme .col-right{
+
+float:left;
+//width:50%;
+
+}
+
+
+.aboutme .col-left{
+
+
+width:40%;
+padding-left:2%;
+ padding-right: 3%;
+ 
+}
+
+
+
+.aboutme img{
+
+
+max-width:100%; 
+
+}
+
+
+
+.aboutme .col-right{
+width:60%;
+ padding-right:3%;
+
+
+
+}
+
+.aboutme .col-right h2{
+text-align: center;
+margin:0;
+padding:0;
+
+
+}
+
+
+.aboutme .col-right p{
+text-align: justify;
+margin:0;
+padding-top:10px;
+font-size: 18px;
+
+}
+
+
+ .aboutme #btn{
+
+text-align: center;
+margin:0 auto;
+padding:0;
+
+}
+
+.aboutme a{
+
+text-decoration: none;
+
+padding: 10px 20px;
+display: inline-block;
+margin:20px auto;
+background: green;
+color:white;
+
+font-size: 19px;
+border-radius : 5px;
+}
+
+.aboutme a:hover{
+color:orange;
+background: #323232;
+transition: all 0.6s ease;
+
+}
+
+
+
+
+/*----myskills----*/
+
+.myskills{
+//overflow: hidden;
+//background:#323232;
+
+}
+
+.myskills:after{
+clear:both;
+content:'';
+display:block; 
+}
+
+
+
+.myskills h1{
+text-align: center;
+position:relative;
+margin:0;
+padding-top:20px;
+padding-bottom:20px;
+}
+
+
+.myskills h1:after{
+background:dodgerblue;
+position:absolute;
+height:2px;
+width:100px; 
+content:'';
+top:58px;
+margin-left: -110px;
+
+}
+
+
+
+
+
+
+
+.myskills .leftskill,.myskills .centerskill,.myskills .rightskill{
+padding:20px 10px 20px 10px ;
+float: left;
+width:32%;
+margin:2px auto;
+
+
+}
+
+
+
+
+
+.myskills .leftskill{
+background:grey;
+//border:1px solid red;
+//width:33.3%;
+text-align: center;
+margin-left: 1.8%;
+}
+
+
+.myskills .leftskill h2{
+
+
+margin-top:10px; 
+padding:0;
+margin-bottom:10px; 
+}
+
+.myskills .leftskill p{
+
+text-align: center;
+margin:0; 
+font-size: 17px;
+}
+
+.myskills .centerskill{
+background:lightblue;
+//border:1px solid green;
+//width:33.3%;
+text-align: center;
+}
+
+.myskills .centerskill h2{
+
+ 
+margin-top:10px; 
+padding:0;
+margin-bottom:10px; 
+}
+
+.myskills .centerskill p{
+
+text-align: center;
+margin:0; 
+font-size: 17px;
+}
+
+.myskills .rightskill{
+background:grey; 
+//border:1px solid red;
+//width:33.3%;
+text-align: center;
+margin-right: 1.8%;
+}
+
+.myskills .rightskill h2{
+
+
+margin-top:10px; 
+padding:0;
+margin-bottom:10px; 
+}
+
+.myskills .rightskill p{
+
+text-align: center;
+margin:0; 
+font-size: 17px;
+}
+
+
+#skillsfab{
+font-size: 40px;
+padding:15px; 
+color:white;
+background: green;
+width:70px;
+height:70px;
+border-radius: 50%;
+}
+
+
+/*----End of myskills section----*/
+
+
+/*----myProjects section----*/
+
+.myProjects{
+
+background-color:#fff; 
+//padding-top: 50px;
+padding-bottom:30px; 
+margin:0;
+}
+
+
+
+
+.myProjects:after{
+
+content:'';
+clear:both;
+display:block; 
+}
+
+.myProjects h2{
+margin-top:0;
+text-align: center;
+padding-top: 30px;
+padding-bottom: 30px;
+position:relative;
+}
+
+.myProjects h2:after{
+content:'';
+width:100px;
+height:2px;
+position:absolute;
+background:green;
+top:65px; 
+margin-left:-110px;
+}
+
+
+
+
+.myProjects .project1,  
+.myProjects .project2,
+ .myProjects .project3,
+ .myProjects .project4,
+ .myProjects .project5,
+ .myProjects .project6{
+
+ height:300px;
+ width:30%;
+ float:left;
+background:grey;
+position:relative; 
+overflow:hidden;
+margin-top:20px;
+border:1px solid black;	
+ }
+
+
+.myProjects .project1{
+background-image: url('./images/im1.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+margin-left:2%;
+margin-right: 1.5%;
+}
+
+.myProjects .project2{
+	background-image: url('./images/im2.jpg');
+	background-size: cover;
+background-repeat: no-repeat;
+margin-left:1.5%;
+margin-right: 1.5%;
+}
+
+
+
+
+
+
+
+
+.myProjects .project3{
+	background-image: url('./images/im3.jpg');
+	background-size: cover;
+background-repeat: no-repeat;
+margin-left:1.5%;
+margin-right: 2%;
+}
+
+
+
+.myProjects .project4{
+background-image: url('./images/im4.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+margin-left:2%;
+margin-right: 1.5%;
+}
+
+.myProjects .project5{
+  background-image: url('');
+  background-size: cover;
+background-repeat: no-repeat;
+margin-left:1.5%;
+margin-right: 1.5%;
+}
+
+.myProjects .project6{
+  background-image: url('./images/im3.jpg');
+  background-size: cover;
+background-repeat: no-repeat;
+margin-left:1.5%;
+margin-right: 2%;
+}
+
+
+
+.myProjects .overlay{
+text-align: center;
+width:100%;
+height: 100%;
+position: absolute;
+
+padding-top: 300px;
+}
+
+
+.overlay a{
+
+display: inline-block;
+border: 1px solid white;
+color:white;
+padding:10px 15px 10px 15px;
+text-decoration: none;
+font-size: 18px;
+}
+
+.overlay a:hover{
+
+
+border: 1px solid orange;
+color:white;
+border-radius: 10px;
+}
+
+
+.myProjects .overlay:hover{
+transition:all 0.6s ease;
+padding-top: 130px;
+background-color: rgba(0,0,0,0.6);
+
+}
+
+/*----End of  myProjects section----*/
+
+
+
+/*----Contact me section----*/
+
+.social{
+
+width:100%;
+overflow:hidden;
+}
+
+.social h2{
+
+text-align:center; 
+position:relative;
+}
+
+
+.social h2:after{
+content:'';
+width:90px;
+height:2px;
+background:grey;
+top:30px;
+margin-left:-105px;
+position:absolute;
+}
+
+
+
+.social-container p {
+color:#ccc;
+font-family: italic;
+font-size: 17px;
+
+}
+
+.social-container{
+background:#09314f;
+border:1px solid black;
+width:100%;
+margin:0 auto;
+overflow: hidden;
+padding: 20px;
+margin:0;
+text-align: center;
+}
+
+.social-container .col-1,
+.social-container .col-2,
+.social-container .col-3
+{
+width:33.3%;
+
+float:left;
+}
+
+
+.social-container .col-1 p,
+.social-container .col-2 p{
+margin-top:10px;
+color:grey;
+
+}
+
+
+
+
+
+.col-1{
+
+text-align: center;
+
+} 
+
+
+.col-1 .col1a, .col-1 .col1b{
+display: inline-block;
+padding:10px;
+}
+
+.col1b{
+
+//float:right;
+
+}
+
+
+.col-2 .col2a, .col-2 .col2b{
+display: inline-block;
+padding:10px;
+
+}
+
+.col-2{
+
+text-align: center;
+
+} 
+
+
+.social-container i{
+font-size:30px; 
+text-align: center;
+margin:10px 0;
+padding-top:2px;
+background:grey;
+width:40px;
+height:35px;
+
+}
+
+
+
+
+.col-3{
+
+
+text-align: center;
+//clear: both;
+color:grey;
+}
+
+
+.col-3 b{
+
+color:green;
+font-size: 18px;
+}
+
+
+.one #fabcontact{
+
+width:50px;
+height:50px;
+color:white;
+}
+
+.acolor{
+
+color:#ccc;
+
+}
+
+.acolor:hover{
+opacity:0.5;
+color:white;
+
+
+}
+
+/*----end Contact me section----*/
+
+
+/*----Scroll button----*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  //font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #323232;
+  //color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  opacity:0.7;
+}
+
+
+
+#myBtn i{
+font-size: 28px;
+color:dodgerblue;
+
+}
+
+#myBtn:hover {
+  //background-color: #555;
+  opacity:1;
+}
+
+/*----end of Scroll button----*/
+
+
+
