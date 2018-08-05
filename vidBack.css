@@ -334,11 +334,11 @@ padding:0;
 header{
 
 
-
-
-
-
-padding-top: 0px;/*for fixed nav*/
+display: flex;
+justify-content: center;
+align-items: flex-start;
+text-align: center;
+padding-top: 63px;/*for fixed nav*/
 
 
 }
